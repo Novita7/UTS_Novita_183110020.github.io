@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'Gleego';
+    src: url(../fonts/Glegoo-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Moms';
+    src: url(../fonts/moms-din.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'ForeFarmers';
+    src: url(../fonts/ForefarmersDEMO.ttf) format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.clear-float {
+    clear: both;
+}
+
+#selected {
+    color: white;
+}
+
+.link-focused {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.nav {
+    /* border-bottom: 2px solid black; */
+    padding: 0 60px;
+    display: flex;
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+}
+
+.left-item {
+    padding: 8px 0;
+    font-weight: bold;
+    width: 200px;
+    height: 100%;
+    flex: .3;
+}
+
+.menu-bar {
+    flex: .8;
+}
+
+.menu-bar ul {
+    text-align: right;
+    padding: 13.5px 0;
+    height: 100%;
+    list-style-type: none;
+}
+
+.menu-bar ul li {
+    padding: 6px;
+    display: inline-block;
+}
+
+.menu-bar ul li a {
+    color: white;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/* .menu-bar ul li a:hover {
+    
+} */
+
+.border-animate:hover {
+    border-bottom: 1.3px solid white;
+    padding-bottom: 10px;
+}
+
+.menu-bar ul li .bt-res {
+    transition: .5s;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 7px;
+}
+
+.darken-layer {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height: 721px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.hero {
+    width: 100%;
+    height: 721px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/hero.jpg);
+    padding: 203px 70px;
+}
+
+.hero .hero-content {
+    width: 855px;
+    position: relative;
+    z-index: 20;
+    color: white;
+}
+
+.hero .hero-content .bt {
+    transition: .3s;
+    margin-top: 30px;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero .hero-content .bt-order:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero .hero-content .bt-res {
+    margin-left: 13px;
+    background-color: white;
+    color: black;
+}
+
+.hero .hero-content h1,
+.hero .hero-content h1 span {
+    line-height: 59px;
+    font-size: 50px;
+    font-family: Gleego, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.hero .hero-content p {
+    margin-top: 20px;
+    line-height: 24px;
+    color: white;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+.main h3 {
+    font-family: 'Moms', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+}
+
+.main img {
+    margin: 5px auto;
+}
+
+.main .cuisine {
+    margin-top: 60px;
+}
+
+.main .cuisine ul {
+    display: flex;
+    margin: auto;
+    width: 1135px;
+    list-style-type: none;
+}
+
+.main .cuisine ul li {
+    margin: 10px;
+    position: relative;
+    width: 50%;
+    height: 300px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .8);
+}
+
+.main .cuisine .cuisine-container li .content {
+    color: white;
+    position: absolute;
+    z-index: 999;
+    margin-top: 29px;
+    padding-left: 63px;
+    text-align: left;
+    width: 80%;
+}
+
+.main .cuisine .cuisine-container li .content p {
+    line-height: 24px;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+.main .cuisine ul li h3 {
+    font-family: Gleego, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+    text-align: left;
+}
+
+/* List gambar background */
+.geprek {
+    background-image: url(../img/cuisine/gerpek-setan.jpg);
+    background-position: center;
+}
+
+.bakso {
+    background-image: url(../img/cuisine/bakso.jpg);
+}
+
+.sate-ayam {
+    background-image: url(../img/cuisine/sate-ayam.jpg);
+}
+
+.cah-kangkung {
+    background-image: url(../img/cuisine/cah-kangkung.jpg);
+}
+
+/* End of list gambar */
+
+.main .cuisine .cuisine-container li .image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.main .cuisine .cuisine-container li .dark-cuis {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .8) 1%, rgba(158, 150, 150, 0.1));
+}
+
+.main .cuisine .cuisine-container li .content .bt-view {
+    transition: .2s;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 26px;
+}
+
+.main .cuisine .cuisine-container li .content .bt-view:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+.main .res-back {
+    margin-top: 100px;
+    background-attachment: fixed;
+    background-image: url(../img/warung-makan.jpg);
+    width: 100%;
+    height: 601px;
+    background-position: center;
+    text-align: right;
+}
+
+.res-back .highlight-content {
+    padding: 50px;
+    float: right;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), #FD0E25 72%);
+    width: 75%;
+}
+
+.res-back .highlight-content h1 {
+    font-family: 'Moms', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    color: white;
+}
+
+.res-back .highlight-content p {
+    font-size: 25px;
+    color: white;
+    font-family: 'ForeFarmers', Arial, Helvetica, sans-serif;
+    margin: 60px 0 0 auto;
+    width: 40%;
+}
+
+.starred h1 {
+    margin: 40px 0;
+    font-family: 'Moms', Arial, Helvetica, sans-serif;
+}
+
+.starred {
+    /* padding: 20px 70px; */
+}
+
+.starred ul {
+    list-style-type: none;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+.starred .high-container .trigger {
+    z-index: 99;
+    position: absolute;
+    width: 380px;
+    height: 251px;
+}
+
+.starred .high-container .sponsored {
+    transition: .4s;
+    opacity: 0;
+    padding: 70px 8px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    color: white;
+    width: 380px;
+    height: 251px;
+}
+
+.starred .high-container img {
+    margin: 0;
+    width: 380px;
+    height: 251px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+.starred .high-container h3 {
+    margin: 0;
+    font-weight: normal;
+    margin: 20px 0;
+    font-family: 'ForeFarmers', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+
+.starred ul li {
+    padding: 10px;
+}
+
+.testi {
+    margin: 40px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    background-color: lime;
+    background-image: url(../img/testi-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.testi .test-container {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 23px;
+    padding: 253px 286px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.name {
+    font-family: 'ForeFarmers', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+footer p {
+    right: 0;
+    left: 0;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+footer .copy {
+    font-family: 'Glegoo', Arial, Helvetica, sans-serif;
+}
+
+footer {
+    position: relative;
+    color: white;
+    padding: 20px 0;
+    background-color: #1B1F28;
+    height: 178px;
+    width: 100%;
+}
+
+.talk h3 {
+    margin: 40px 0;
+}
+
+.talk .tell-container {
+    margin: 0 auto 0px auto;
+    width: 80%;
+    display: flex;
+}
+
+.talk .tell-container .wa,
+.talk .tell-container .email {
+    margin: 0 10px;
+    width: 50%;
+    height: 300px;
+    color: #444444;
+    font-family: 'Glegoo', Arial, Helvetica, sans-serif;
+}
+
+.talk .tell-container h4 {
+    font-family: 'Glegoo', Arial, Helvetica, sans-serif;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.talk .tell-container p {
+    font-family: 'Glegoo', Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.talk .tell-container .email img {
+    margin: 20px 0;
+}
